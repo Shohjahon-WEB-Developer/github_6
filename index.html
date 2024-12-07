@@ -9,16 +9,30 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="images/spider.png" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    screens: {
+                        'xs': '320px'
+                    }
+                }
+            },
+        }
+    </script> -->
     <title>Web Spider</title>
 </head>
 
-<body>
+<body class="">
     <header class="sticky top-0 z-50 bg-white">
-        <nav class="container m-auto mt-[15px] flex justify-between">
+        <nav class="container m-auto mt-[15px] flex justify-between md:px-0 px-2">
             <img data-aos="zoom-in" data-aos-duration="1000" src="images/Screenshot_4-12-2024_142351_looka.com.jpeg"
-                class="w-[150px] h-auto" alt="Logo">
-            <div class="flex items-center gap-12 text-[17px] font-semibold">
+                width="100px" class="md:w-[150px] h-auto" alt="Logo">
+            <div class="md:flex items-center gap-12 text-[17px] font-semibold hidden">
                 <ul class="flex items-center gap-12">
                     <li data-aos="fade-right" data-aos-duration="1100"><a class="hover:text-orange-700"
                             href="#home">Home</a>
@@ -36,7 +50,7 @@
                             href="#blog">Blog</a>
                     </li>
                 </ul>
-                <ul>
+                <ul class="">
                     <li>
                         <select data-aos="fade-right" data-aos-duration="1100">
                             <option value="UZ">UZ</option>
@@ -48,68 +62,72 @@
             </div>
             <div data-aos="fade-left" data-aos-duration="1150" class="flex items-center justify-center gap-7">
                 <button
-                    class="w-[120px] h-[56px] bg-orange-500 text-white text-[22px] font-semibold rounded-[12px] hover:bg-orange-300 duration-[0.3s]"><a
+                    class="w-[120px] md:h-[56px] h-[50px] bg-orange-500 text-white text-[22px] font-semibold rounded-[12px] hover:bg-orange-300 duration-[0.3s]"><a
                         href="#contact">Contact Us</a></button>
-            </div>
+                <!-- <button id=""
+                    class="w-[100px] h-[45px] rounded bg-neutral-800 text-white border-2">DarkMode</button>
+            </div> -->
+
+                <button class="flex md:hidden"><i class="fa-solid fa-bars text-[26px]"></i></button>
         </nav>
     </header>
 
     <!-- div 1 -->
 
-    <div id="home" class="bg-orange-100 max-w-[1600px] m-auto mt-[30px] relative">
+    <div id="home" class="bg-orange-100 max-w-[1600px] m-auto mt-[30px] relative ">
         <div data-aos="fade-right" data-aos-duration="2500"
-            class="container m-auto justify-center gap-8 flex flex-col h-[600px]">
+            class="container m-auto justify-center gap-8 flex flex-col h-[600px] md:px-0 px-3">
             <p class="flex items items-center gap-3 text-orange-500 text-[18px] font-semibold">
                 <i class="fa-solid fa-spider"></i>
                 I am Programmer
             </p>
-            <h1 class="text-[70px] font-bold w-[700px] h-auto">AI and
+            <h1 class="md:text-[70px] text-[45px] font-bold md:w-[700px] h-auto">AI and
                 HACKING Web Technologies</h1>
-            <p class="text-[17px] w-[500px] h-auto"><b>HACKING , AI , CODING</b>
+            <p class="text-[17px] md:w-[500px] h-auto"><b>HACKING , AI , CODING</b>
                 learning all these things are really amazing.
                 The process of learning them gives
                 you an emotional feeling and you have to tell yourself just one thing <b>I can do it</b>
             </p>
-            <a class="flex text-[24px] font-bold bg-orange-500 text-white w-[250px] h-[56px] justify-center rounded-[10px] hover:bg-neutral-800 duration-[0.4s] hover:text-orange-500"
+            <a class="flex md:text-[24px] text-lg font-bold bg-orange-500 text-white md:w-[250px] w-[180px] h-[56px] justify-center rounded-[10px] hover:bg-neutral-800 duration-[0.4s] hover:text-orange-500"
                 href=""><Button>Download My CV</Button></a>
         </div>
         <img data-aos="fade-left" data-aos-duration="3000" src="images/result.png" alt="Image"
-            class="absolute bottom-0 right-[100px] w-[600px] h-[600px] object-cover">
+            class="absolute bottom-0 right-[100px] w-[600px] h-[600px] object-cover md:flex hidden ">
     </div>
 
     <!-- div 2 -->
 
-    <div id="about" class="container m-auto flex items-center justify-between h-[650px] mt-[150px]">
-        <div class="w-[450px] h-auto">
+    <div id="about" class="container m-auto flex items-center justify-between h-[650px] mt-[150px] md:px-0 px-5">
+        <div class="w-[450px] h-auto md:flex hidden">
             <img src="images/myselfrasm.jpg" class="rounded-t-[140px] rounded-br-[140px]" alt="rasm">
         </div>
 
-        <div class="flex flex-col gap-7 w-[600px] h-auto">
+        <div class="flex flex-col gap-7 md:w-[600px] h-auto">
             <p class="flex gap-3 items-center"><i class="fa-solid fa-pen text-orange-500 text-[17px]"></i> About Me</p>
-            <h2 class="text-[45px] font-bold">Programming / I Can Design Anything You Want</h2>
+            <h2 class="md:text-[45px] text-[30px] font-bold">Programming / I Can Design Anything You Want</h2>
             <p>Hello Dear , my name is <span class="text-[18px] font-semibold text-orange-600">Shohjahon</span> . I was
                 born in Ferghana region and I am twenty years old . I am a
                 student of <span class="text-[18px] font-semibold text-orange-600">Najot Ta'lim</span> Education center.
                 I am studying <span class="text-[18px] font-semibold text-orange-600"> FrontEnd React </span>
                 profession.</p>
-            <div class="flex gap-[130px]">
-                <div class="flex gap-5 items-center">
+            <div class="flex md:gap-[130px] justify-between md:justify-normal">
+                <div class="flex md:flex-row flex-col gap-5 items-center justify-center md:justify-normal">
                     <img src="images/aboutIconOne.png" class="w-[60px] h-auto" alt="True">
-                    <div>
+                    <div class="flex items-center justify-center flex-col md:items-start md:justify-normal">
                         <p class="text-[24px] font-bold text-orange-500">0</p>
                         <p class="text-[18px] font-semibold">Complete Projects</p>
                     </div>
                 </div>
-                <div class="flex gap-5 items-center">
+                <div class="flex gap-5 items-center md:flex-row flex-col">
                     <img src="images/aboutIconTwo.png" class="w-[60px] h-auto" alt="Count">
-                    <div>
+                    <div class="flex items-center justify-center flex-col md:items-start md:justify-normal">
                         <p class="text-[24px] font-bold text-orange-500">0</p>
                         <p class="text-[18px] font-semibold">Years of Experiance</p>
                     </div>
                 </div>
             </div>
 
-            <div class="flex gap-[145px]">
+            <div class="flex md:gap-[145px] justify-between md:justify-normal">
                 <ul data-aos="fade-up" data-aos-duration="1000">
                     <li class="flex items-center gap-2 text-[16px]">
                         <i class="fa-regular fa-square-check text-[16px] text-orange-500"></i>
@@ -131,22 +149,21 @@
                     </li>
                 </ul>
             </div>
-            <a data-aos="fade-up" data-aos-duration="1800"
-                class="flex text-[24px] font-bold bg-orange-500 text-white w-[250px] h-[56px] justify-center rounded-[10px] hover:bg-neutral-800 duration-[0.4s] hover:text-orange-500"
-                href=""><button>Download My CV</button></a>
+            <a class="flex md:text-[24px] text-lg font-bold bg-orange-500 text-white md:w-[250px] w-[180px] h-[56px] justify-center rounded-[10px] hover:bg-neutral-800 duration-[0.4s] hover:text-orange-500"
+                href=""><Button>Download My CV</Button></a>
         </div>
     </div>
     </div>
 
     <!-- div 3 -->
 
-    <div id="service" class="container m-auto mt-[130px]">
+    <div id="service" class="container m-auto mt-[130px] ">
         <div class="text-center">
             <p><i class="fa-brands fa-servicestack text-orange-600 text-[20px] mr-[4px]"></i> My Service</p>
             <h2 class="text-[45px] font-bold mt-[15px]">Services I Offer</h2>
         </div>
 
-        <div class="flex flex-wrap gap-[28px] mt-[70px]">
+        <div class="flex flex-wrap gap-[28px] mt-[70px] justify-center md:justify-normal">
             <div
                 class="w-[290px] h-[330px] flex flex-col items-center justify-center p-[25px] shadow transition-transform transform hover:scale-110 duration-[0.7s]">
                 <img src="images/UI.png" alt="UI Design">
@@ -201,13 +218,13 @@
 
     <!-- div 4 -->
 
-    <div id="blog" class="container m-auto mt-[130px]">
+    <div id="blog" class="container m-auto mt-[130px] md:px-0 px-5">
         <div class="text-center">
             <p><i class="fa-brands fa-hive text-orange-500 text-[18px] mr-[4px]"></i> My Blog</p>
             <h3 class="text-[45px] font-bold mt-[15px]">Latest Blog</h3>
         </div>
 
-        <div class="flex justify-between gap-7 mt-[60px]">
+        <div class="flex md:flex-row flex-col justify-between gap-7 mt-[60px]">
             <div class="flex flex-col h-[550px] pb-[25px] gap-7 shadow rounded-[20px] overflow-hidden">
                 <img src="images/blogOne.png" class="w-full h-[390px]" alt="rasm">
                 <div class="ml-[25px] flex flex-col gap-7 items-start">
@@ -243,17 +260,17 @@
 
     <!-- div 5 -->
 
-    <div id="contact" class="container m-auto mt-[130px] h-[600px]">
+    <div id="contact" class="container m-auto mt-[130px] h-[600px] md:px-0 px-5">
         <div class="text-center">
             <p><i class="fa-solid fa-arrow-up-from-bracket text-orange-600 text-[20px] mr-[6px]"></i> My Contact</p>
             <h2 class="text-[50px] font-bold">I Want To Hear From You</h2>
         </div>
 
 
-        <div class="flex justify-between h-[250px] mt-[60px]">
+        <div class="flex md:flex-row flex-col justify-between md:h-[250px] mt-[60px] md:gap-0 gap-4">
             <div>
 
-                <div class="flex flex-wrap gap-[20px] w-[840px]">
+                <div class="flex flex-wrap gap-[20px] md:w-[840px]">
                     <input data-aos="fade-up" data-aos-duration="1000" type="text" required
                         class="w-[400px] h-[50px] rounded-[10px] border-2 border-orange-200 pl-[20px]"
                         placeholder="Your Name">
@@ -270,12 +287,12 @@
 
                 <div class="mt-[20px]">
                     <textarea data-aos="fade-up" data-aos-duration="1000" required
-                        class="w-[820px] h-[100px] rounded-[10px] border-2 border-orange-200 pl-[20px] pt-[15px]"
+                        class="md:w-[820px] w-full h-[100px] rounded-[10px] border-2 border-orange-200 pl-[20px] pt-[15px]"
                         placeholder="Message"></textarea>
                 </div>
             </div>
 
-            <div class="flex flex-col justify-between">
+            <div class="flex flex-col justify-between md:gap-0 gap-4">
 
                 <div data-aos="fade-left" data-aos-duration="1000" class="flex items-center gap-5">
                     <p class="flex items-center justify-center w-[50px] h-[50px] rounded-[8px] bg-orange-100"><i
@@ -305,7 +322,7 @@
         </div>
 
         <div data-aos="fade-out" data-aos-duration="3000" class="mt-[50px]">
-            <a class="flex text-[24px] font-bold bg-orange-500 text-white w-[250px] h-[56px] justify-center rounded-[10px] hover:bg-neutral-800 duration-[0.4s] hover:text-orange-500"
+            <a class="flex md:text-[24px] text-lg font-bold bg-orange-500 text-white md:w-[250px] w-[200px] h-[56px] justify-center rounded-[10px] hover:bg-neutral-800 duration-[0.4s] hover:text-orange-500"
                 href=""><Button>Send My Message</Button></a>
         </div>
 
@@ -313,9 +330,10 @@
 
     <!-- div 6 footer -->
 
-    <footer class="mt-[100px] bg-neutral-900 h-[600px] max-w-[1600px] overflow-hidden m-auto text-white">
-        <div class="container m-auto pt-[100px] flex justify-between">
-            <div class="w-[300px] h-[255px]">
+    <footer
+        class="md:mt-[100px] mt-[400px] bg-neutral-900 md:h-[600px] max-w-[1600px] overflow-hidden m-auto text-white md:px-0 px-5">
+        <div class="container m-auto pt-[40px] md:pt-[100px] flex flex-col md:flex-row justify-between">
+            <div class="md:w-[300px] w-full h-auto mb-6 md:mb-0">
                 <img src="images/Screenshot_4-12-2024_142351_looka.com.jpeg" class="w-[120px] h-[80px] rounded-[20px]"
                     alt="Logo">
                 <p class="w-[300px] mt-[30px] mb-[20px]">"Kod yozish - san'at, uning har bir satri dunyoni o'zgartirish
@@ -326,7 +344,7 @@
             </div>
 
 
-            <div class="w-[180px] h-[255px] flex flex-col justify-between">
+            <div class="md:w-[180px] h-[255px] flex flex-col justify-between">
                 <h2 class="text-[22px] font-semibold">Explore Link</h2>
                 <ul class="flex flex-col gap-4">
                     <li class="hover:text-orange-500">About</li>
@@ -337,7 +355,7 @@
             </div>
 
 
-            <div class="w-[220px] h-[255px] flex flex-col justify-between">
+            <div class="md:w-[220px] h-[255px] flex flex-col justify-between">
                 <p class="text-[22px] font-semibold">My Services</p>
                 <ul class="flex flex-col gap-4">
                     <li class="hover:text-orange-500">UI/UX Design</li>
@@ -348,7 +366,7 @@
             </div>
 
 
-            <div class="w-[300px] h-[255px] flex flex-col justify-between">
+            <div class="md:w-[300px] h-[255px] flex flex-col justify-between">
                 <p class="text-[22px] font-semibold">Follow Me</p>
                 <ul class="flex flex-col gap-6">
                     <li>
@@ -380,11 +398,11 @@
             </div>
         </div>
 
-        <div class="border-2 w-[1600px] m-auto mt-[130px]"></div>
+        <div class="border-2 w-full md:w-[1600px] m-auto mt-[130px] md:mt-[130px]"></div>
 
-        <div class="container m-auto flex justify-between mt-[40px]">
+        <div class="container m-auto flex md:flex-row justify-between mt-[40px] px-4">
             <p>Everything will happen on time © 2024 Shakxjahon</p>
-            <div class="flex gap-[80px]">
+            <div class="flex flex-col md:flex-row gap-2 gap-[10px] mt-0 md:mt-0">
                 <p><a class="hover:text-orange-500" href="#">Terms & Conditions</a></p>
                 <p><a class="hover:text-orange-500" href="#">Privacy Policy</a></p>
             </div>
@@ -397,21 +415,13 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- <script>
+        let html = document.documentElement;
+        function darkMode() {
+            html.classList.toggle('dark')
+            html.classList.toggle('light')
+        }
+    </script> -->
 
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
